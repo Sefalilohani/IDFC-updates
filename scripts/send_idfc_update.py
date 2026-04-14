@@ -10,17 +10,7 @@ REDASH_REPORT_URL = f"{REDASH_URL}/queries/{QUERY_ID}#2901"
 
 _raw_token    = os.environ["SLACK_BOT_TOKEN"]
 SLACK_TOKEN   = "xoxb" + _raw_token[4:31] + "bFqMGfkmHBzvLRtU1It2ptnt"
-SLACK_CHANNEL = "C0AP47PBZFT"
-
-CC_USERS = [
-    "<@U026K56UJQL>",
-    "<@U06UBBS4QHJ>",
-    "<@UURRMS3MG>",
-    "<@U03GURJS6SZ>",
-    "<U08FT9QD9U3>",
-    "<U08HF79BTSM>",
-    "<U092KHH1MSQ>",
-]
+SLACK_CHANNEL = "C0AGRE19V6U"
 
 SEV_ORDER = ["0-1", "2 - 3", "4 - 5", "6 - 7", "8 - 14", "15 - 30", "31 - 90", "90+"]
 
