@@ -12,6 +12,11 @@ _raw_token    = os.environ["SLACK_BOT_TOKEN"]
 SLACK_TOKEN   = "xoxb" + _raw_token[4:31] + "bFqMGfkmHBzvLRtU1It2ptnt"
 SLACK_CHANNEL = "C0AP47PBZFT"
 
+CC_USERS = [
+    "<@U095NMBQ9NY>",   # Shagufta 
+    "<@U08FVFRJ9U4>",   # Akil 
+]
+
 SEV_ORDER = ["0-1", "2 - 3", "4 - 5", "6 - 7", "8 - 14", "15 - 30", "31 - 90", "90+"]
 
 TAT_7_PLUS  = 7
