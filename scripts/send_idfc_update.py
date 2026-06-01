@@ -151,15 +151,18 @@ def build_message(rows):
 
     bullets = "\n".join(bullet_lines) if bullet_lines else "• No checks have crossed 7+ days"
 
+    cc = " ".join(CC_USERS)
+
     message = (
         f"*Update on IDFC First Bharat client In Progress checks*\n\n"
         f"{table}\n\n"
         f"{bullets}\n\n"
         f"*Total In-Progress checks: {total}*\n"
-        f"<{REDASH_REPORT_URL}|View full report on Redash>"
+        f"<{REDASH_REPORT_URL}|View full report on Redash>\n\n"
+        f"CC: {cc}"
     )
-    return message
 
+    return message
 
 def send_slack(message):
     resp = requests.post(
